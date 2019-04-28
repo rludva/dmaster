@@ -2,7 +2,7 @@ package dmaster
 
 type collection struct {
 	collectionid int
-	name string
+	name         string
 }
 
 func newCollection(collectionid int, name string) *collection {
