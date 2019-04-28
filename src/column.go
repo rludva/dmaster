@@ -1,7 +1,7 @@
 package dmaster
 
 type column struct {
-	columnid        int
+	columnid     int
 	name         string
 	mtypeid      int
 	collectionid int

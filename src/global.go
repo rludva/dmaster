@@ -1,10 +1,10 @@
 package dmaster
 
 var (
-	columns []column
-	collections[] collection
-	values   []data
-	mtypes   []mtype
+	columns     []column
+	collections []collection
+	values      []data
+	mtypes      []mtype
 )
 
 func addMType(typeid int, name string) {
