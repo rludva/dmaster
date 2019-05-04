@@ -2,6 +2,7 @@
   <dictionary name="rludva">
     <words>
       <w>collectionid</w>
+      <w>columnid</w>
       <w>dataid</w>
       <w>mtype</w>
       <w>mtypeid</w>

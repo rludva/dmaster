@@ -1,11 +1,11 @@
 package dmaster
 
 type data struct {
-	dataid int
+	rowid int
+	columnid  int
 	value  string
-	rowid  int
 }
 
-func newData(dataid int, value string, rowid int) *data {
-	return &data{dataid, value, rowid}
+func newData(rowid int, value string, columnid int) *data {
+	return &data{rowid, value, columnid}
 }
