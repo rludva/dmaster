@@ -1,5 +1,7 @@
 package dmaster
 
+import "fmt"
+
 var (
 	columns     []column
 	collections []collection
@@ -36,4 +38,27 @@ func Init() {
 	//
 	createEvidenceForHmotnost()
 	createEvidenceForKalendar()
+}
+
+func Print(evidenceid int) {
+	for _,v := range collections {
+		if v.collectionid == evidenceid {
+			mcolumns := []int{}
+			for _,vv := range columns {
+				if vv.collectionid == evidenceid {
+					mcolumns = append(mcolumns, vv.columnid)
+				}
+			}
+
+			data := []string{}
+			for _,vv := range values {
+				if vv.columnid == mcolumns[0] {
+					data = append(data, vv.value)
+				}
+			}
+
+			fmt.Printf("%v, %v", v, mcolumns)
+			fmt.Printf("%v", data)
+		}
+	}
 }
