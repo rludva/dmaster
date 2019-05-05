@@ -1,10 +1,17 @@
 package dmaster
 
 type collection struct {
-	collectionid int
-	name         string
+	collectionid    int
+	name            string
+	numberOfColumns int
 }
 
-func newCollection(collectionid int, name string) collection {
-	return collection{collectionid: collectionid, name: name}
+var collections []collection
+
+func AddCollection(collectionid int, name string) {
+	collections = append(collections, collection{collectionid: collectionid, name: name})
+}
+
+func NumberOfColumns(collectionid int) int {
+	return 2
 }

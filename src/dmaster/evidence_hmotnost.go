@@ -1,8 +1,8 @@
 package dmaster
 
-func createEvidenceForHmotnost()  {
+func createEvidenceForHmotnost() {
 	// Evidence..
-	addCollection(1, "Osobní hmotnost")
+	AddCollection(1, "Osobní hmotnost")
 
 	// Create columns..
 	addColumn(1, 1, "#", 1)
@@ -16,11 +16,11 @@ func createEvidenceForHmotnost()  {
 }
 
 func addDataForEvidenceHmotnost() {
-	addValue(1,1, "1")
-	addValue(1,2, "2019-05-04")
-	addValue(1,3, "112,4")
-	addValue(1,4, "53,4")
-	addValue(1,5, "2,4")
-	addValue(1,6, "34,3")
-	addValue(1,7, "38,0")
+	AddValue(1, 1, "1")
+	AddValue(1, 2, "2019-05-04")
+	AddValue(1, 3, "112,4")
+	AddValue(1, 4, "53,4")
+	AddValue(1, 5, "2,4")
+	AddValue(1, 6, "34,3")
+	AddValue(1, 7, "38,0")
 }
