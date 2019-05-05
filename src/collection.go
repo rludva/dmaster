@@ -5,6 +5,6 @@ type collection struct {
 	name         string
 }
 
-func newCollection(collectionid int, name string) *collection {
-	return &collection{collectionid: collectionid, name: name}
+func newCollection(collectionid int, name string) collection {
+	return collection{collectionid: collectionid, name: name}
 }
