@@ -15,7 +15,7 @@ func addCollection(collectionid int, name string) {
 	collections = append(collections, collection{collectionid: collectionid, name: name})
 }
 
-func addColumn(columnid int, name string, mtypeid int, collectionid int) {
+func addColumn(collectionid, columnid int, name string, mtypeid int) {
 	columns = append(columns, column{columnid, name, mtypeid, collectionid})
 }
 
@@ -35,16 +35,17 @@ func Init() {
 
 	// Create collection of evidence..
 	addCollection(1, "Osobní hmotnost")
+	addCollection(2, "Kalendář")
 
 	// Create evidence..
-	addColumn(1, "#", 1, 1)
-	addColumn(2, "datum", 2, 1)
-	addColumn(3, "hmotnost", 3, 1)
-	addColumn(4, "tuky", 5, 1)
-	addColumn(5, "kosti", 5, 1)
-	addColumn(6, "voda", 5, 1)
-	addColumn(7, "svaly", 5, 1)
-	addColumn(8, "poznámka", 4, 1)
+	addColumn(1, 1, "#", 1)
+	addColumn(1, 2, "datum", 2)
+	addColumn(1, 3, "hmotnost", 3)
+	addColumn(1, 4, "tuky", 5)
+	addColumn(1, 5, "kosti", 5)
+	addColumn(1, 6, "voda", 5)
+	addColumn(1, 7, "svaly", 5)
+	addColumn(1, 8, "poznámka", 4)
 }
 
 func Data() {
